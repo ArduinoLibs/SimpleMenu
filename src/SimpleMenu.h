@@ -82,9 +82,9 @@ typedef unsigned long SMenuItem;
 
 // some defines to make the working with buttons a lot easier
 #ifdef _BUTTON_SUPPORT
-#define GMENU_BTN_DOWN	(0)
-#define GMENU_BTN_UP	(1)
-#define GMENU_BTN_SEL	(2)
+#define SMENU_BTN_DOWN	(0)
+#define SMENU_BTN_UP	(1)
+#define SMENU_BTN_SEL	(2)
 #endif
 
 
@@ -737,13 +737,13 @@ public: // methods
 	{
 		switch (action)
 		{
-			case GMENU_BTN_DOWN:
+			case SMENU_BTN_DOWN:
 				inputDevices.buttons.down = button;
 				break;
-			case GMENU_BTN_UP:
+			case SMENU_BTN_UP:
 				inputDevices.buttons.up = button;
 				break;
-			case GMENU_BTN_SEL:
+			case SMENU_BTN_SEL:
 				inputDevices.buttons.select = button;
 				break;
 		}
@@ -780,12 +780,6 @@ public: // methods
 #pragma endregion
 
 
-#pragma endregion
-
-#pragma region public properties
-public: // properties
-	// index of the current menu item
-	SMenuItemNum CurrentMenuItem = 0;
 #pragma endregion
 
 };
